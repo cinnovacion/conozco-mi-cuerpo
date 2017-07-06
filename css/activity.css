@@ -1,3 +1,59 @@
 #main-toolbar #activity-button {
   background-image: url(../activity/activity-icon.svg);
 }
+
+.objeto {
+    position: absolute;
+}
+
+.titulo {
+    font-size: 50px;
+    top: 50px;
+    left: 150px;
+    color: #666666;
+    text-align: center;
+}
+
+.boton {
+    border-radius: 0;
+    outline: 0;
+}
+
+.boton:hover {
+    border: none;
+}
+
+/* Vista 1 */
+#pag1 {
+    height: 845px;
+    width: 1200px;
+    background: url('../img/pag1.png') 0 0 no-repeat;
+}
+
+#nina {
+    height: 350px;
+    width: 168px;
+    top: 280px;
+    left: 290px;
+    background: url('../img/btn-fem.png') 0 0 no-repeat;
+}
+
+#nina h3 {
+    color: #666666;
+    font-size: 30px;
+    top: 340px;
+}
+
+#nino {
+    height: 350px;
+    width: 129px;
+    top: 280px;
+    left: 797px;
+    background: url('../img/btn-mas.png') 0 0 no-repeat;
+}
+
+#nino h3 {
+    color: #666666;
+    font-size: 30px;
+    top: 340px;
+}
