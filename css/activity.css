@@ -1,5 +1,11 @@
 #main-toolbar #activity-button {
-  background-image: url(../activity/activity-icon.svg);
+  background-image: url(../activity/icono-cmc.png);
+}
+
+.fondo {
+    height: 845px;
+    width: 1200px;
+    background: url('../img/pag1.png') 0 0 no-repeat;
 }
 
 .objeto {
@@ -16,7 +22,8 @@
 
 .boton {
     border-radius: 0;
-    outline: 0;
+    outline: 0;3
+    21
 }
 
 .boton:hover {
@@ -57,3 +64,9 @@
     font-size: 30px;
     top: 340px;
 }
+Ç cv
+.0
+10.
++-
++0
+    >9
