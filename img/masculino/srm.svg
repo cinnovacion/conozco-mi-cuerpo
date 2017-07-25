@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="175.1731mm"
-   height="300mm"
-   viewBox="0 0 175.1731 300"
+   width="77.246468mm"
+   height="132.29167mm"
+   viewBox="0 0 77.246469 132.29167"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92+devel unknown"
    sodipodi:docname="srm.svg"
    inkscape:export-filename="/home/desarrollo/Documentos/conozco-mi-cuerpo/img/masculino/srm.png"
    inkscape:export-xdpi="96"
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.32265625"
-     inkscape:cx="-17.687209"
-     inkscape:cy="568.12231"
+     inkscape:zoom="0.2907532"
+     inkscape:cx="-17.687206"
+     inkscape:cy="568.12237"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,11 +60,12 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-20.177955,-0.1706637)">
+     transform="translate(-20.177954,-167.87901)">
     <g
        id="g4520"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
+       inkscape:export-ydpi="96"
+       transform="matrix(0.44097221,0,0,0.44097221,11.280037,167.80375)">
       <path
          sodipodi:nodetypes="asacasa"
          inkscape:connector-curvature="0"
