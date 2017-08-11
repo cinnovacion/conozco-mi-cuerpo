@@ -1,12 +1,22 @@
 #main-toolbar #activity-button {
   background-image: url(../activity/icono-cmc.png);
 }
+
 .fondo {
     height: 845px;
     width: 1200px;
     background: url('../img/pag1.png') 0 0 no-repeat;
 }
+
 .btn_atras{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 80px;
+    top: 720px;
+}
+
+.btn_atrasm{
     position: absolute;
     width: 100px;
     height: 50px;
@@ -34,12 +44,22 @@
     text-align: center;
 }
 
-.text_matrix{
+.text_titulo{
     position: absolute;
     text-align : inherit;
     font-size: 50px;
     width: 500px;
     left: 580px;
+    top: 40px;  
+}
+
+.text_matrix{
+    position: absolute;
+    text-align : justify;
+    font-size: 35px;
+    width: 500px;
+    left: 580px;
+    top: 170px;
 }
 
 .boton {
@@ -52,7 +72,6 @@
 .boton:hover {
     border: none;
 }
-
 
 /* Vista 1 */
 /*#pag1 {
@@ -89,7 +108,7 @@
     top: 340px;
 }
 
-#exploro {
+#exploro_f {
     height: 350px;
     width: 400px;
     top: 280px;
@@ -97,7 +116,22 @@
     background: url('../img/btn-exploro.png') 0 0 no-repeat;
 }
 
-#exploro h3 {
+#exploro_f h3 {
+    color: #666666;
+    font-size: 30px;
+    top: 340px;
+    left: 144px;
+}
+
+#exploro_m {
+    height: 350px;
+    width: 400px;
+    top: 280px;
+    left: 150px;
+    background: url('../img/btn-exploro.png') 0 0 no-repeat;
+}
+
+#exploro_m h3 {
     color: #666666;
     font-size: 30px;
     top: 340px;
@@ -125,57 +159,26 @@
     height: 547px;
     top: 220px;
     left: 200px;
-    background-image: url('../img/femenino/srf.png');
+    background: url('../img/femenino/srf.png') 0 0 no-repeat;
 }
-#ovario{
+
+#img_srm{
+    position: absolute;
+    width: 771px;
+    height: 547px;
+    top: 220px;
+    left: 424px;
+    background: url('../img/masculino/srm.png') no-repeat;
+}
+
+#grafica{
     position: absolute;
     left: 50px;
     top: 50px;
     width: 518px;
     height: 740px;
-    background-image: url('../img/femenino/ovarios.png');
 }
-
-#falopio{
-    position: absolute;
-    left: 70px;
-    top: 90px;
-    width: 487px;
-    height: 706px;
-    background-image: url('../img/femenino/trompas-falopio.png')
-}
-#vagina{
-    position: absolute;
-    left: 70px;
-    top: 90px;
-    width: 467px;
-    height: 665px;
-    background-image: url('../img/femenino/vagina.png');
-}
-#ovulo{
-    position: absolute;
-    width: 530px;
-    height: 595px;
-    top: 60px;
-    left: 40px;
-    background-image: url('../img/femenino/ovulo.png');
-}
-#uretra{
-    position: absolute;
-    top: 25px;
-    left: 40px;
-    width: 486px;
-    height: 731px;
-    background-image: url('../img/femenino/uretra.png');
-}
-#utero{
-    position: absolute;
-    width: 399px;
-    height: 712px;
-    top: 50px;
-    left: 70px;
-    background-image: url('../img/femenino/utero.png');
-}
+/*botones femenino*/
 .btn_radius{
     position: absolute;
     background-color: chartreuse;
@@ -219,9 +222,45 @@
     left: 700px;
     top: 500px;
 }
-Ç cv
-.0
-10.
-+-
-+0
-    >9
+
+
+/*botones masculino*/
+#graficam{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 518px;
+    height: 740px;
+}
+.btn_radius:hover{
+    content: "radio";
+}
+#btn_escroto{
+    left: 33px;
+    top: 432px;
+}
+#btn_pene{
+    left: 154px;
+    top: 420px;
+}
+#btn_testiculos{
+    left: 199px;
+    top: 392px;
+}
+#btn_uretrav{
+    left: 133px;
+    top: 307px;
+}
+#btn_cdeferente{
+    left: 260px;
+    top: 46px;
+}
+#btn_prostata{
+    left: 131px;
+    top: 192px;
+}
+#btn_vesicula{
+    left: 182px;
+    top: 125px;
+}
+

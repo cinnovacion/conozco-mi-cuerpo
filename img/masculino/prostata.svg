@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="175.1731mm"
-   height="300mm"
-   viewBox="0 0 175.1731 300"
+   width="137.05417mm"
+   height="94.436958mm"
+   viewBox="0 0 137.05417 94.436958"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92+devel unknown"
    sodipodi:docname="prostata.svg"
    inkscape:export-filename="/home/desarrollo/Documentos/conozco-mi-cuerpo/img/masculino/srm.png"
    inkscape:export-xdpi="96"
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.29744873"
+     inkscape:zoom="0.28236075"
      inkscape:cx="704.81"
-     inkscape:cy="552.03884"
+     inkscape:cy="552.03886"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -60,9 +60,12 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-20.177955,-0.1706637)">
+     transform="translate(-20.177955,-205.73371)">
     <g
-       id="g5856">
+       id="g5856"
+       transform="matrix(0.3141701,0,0,0.3141701,13.838645,205.86602)"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <ellipse
          ry="89.840416"
          rx="127.19979"
@@ -342,7 +345,7 @@
          inkscape:connector-curvature="0"
          id="path5812"
          d="m 206.08534,65.340279 -99.18026,61.153741 105.90717,0.50035"
-         style="fill:#000000;stroke:#000000;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:0" />
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.76499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>

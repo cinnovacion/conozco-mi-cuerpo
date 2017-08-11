@@ -10,14 +10,14 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="175.1731mm"
-   height="300mm"
-   viewBox="0 0 175.1731 300"
+   width="137.05417mm"
+   height="113.63093mm"
+   viewBox="0 0 137.05417 113.63093"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92+devel unknown"
    sodipodi:docname="testiculo.svg"
-   inkscape:export-filename="/home/desarrollo/Documentos/conozco-mi-cuerpo/img/masculino/srm.png"
+   inkscape:export-filename="/home/desarrollo/Documentos/conozco-mi-cuerpo/img/masculino/testiculo.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -64,9 +64,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.14872437"
+     inkscape:zoom="0.14118038"
      inkscape:cx="2106.7127"
-     inkscape:cy="496.24684"
+     inkscape:cy="496.24688"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -96,9 +96,10 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-20.177955,-0.1706637)">
+     transform="translate(-20.177955,-186.53974)">
     <g
-       id="g6998">
+       id="g6998"
+       transform="matrix(0.37876976,0,0,0.37876976,12.535156,186.4751)">
       <ellipse
          transform="rotate(90)"
          ry="89.840416"

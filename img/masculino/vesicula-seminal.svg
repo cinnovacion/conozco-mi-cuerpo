@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="137.05417mm"
+   height="126.49578mm"
+   viewBox="0 0 137.05417 126.49578"
    version="1.1"
    id="svg4564"
-   inkscape:version="0.92.1 r"
-   sodipodi:docname="vesicula-seminal.svg">
+   inkscape:version="0.92+devel unknown"
+   sodipodi:docname="vesicula-seminal.svg"
+   inkscape:export-filename="/home/desarrollo/Escritorio/Cmc/img/masculino/vesicula-seminal.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs4558" />
   <sodipodi:namedview
@@ -25,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.16132813"
-     inkscape:cx="-679.73817"
-     inkscape:cy="1113.7473"
+     inkscape:zoom="0.61257928"
+     inkscape:cx="159.14104"
+     inkscape:cy="164.12232"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,7 +38,12 @@
      inkscape:window-height="708"
      inkscape:window-x="0"
      inkscape:window-y="32"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata4561">
     <rdf:RDF>
@@ -51,11 +59,13 @@
   <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(80.628533,-169.74609)">
     <g
        id="g5520"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
+       inkscape:export-ydpi="96"
+       transform="matrix(0.36157444,0,0,0.36157444,-51.475316,189.12838)">
       <ellipse
          ry="82.916977"
          rx="96.253273"

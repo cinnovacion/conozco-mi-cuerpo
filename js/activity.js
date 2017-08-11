@@ -7,45 +7,83 @@ define(function (require) {
     var Mustache    = require("mustache");
     // Plantillas
     var plantilla    = require("../js/plantilla.js");
+    var contenido    = require("../js/contenido.js");
+    
+    // Captura cualquier click sobre la pantalla para ser redirigido a mustache. 
+    function mustache(id,plantilla,txt){
+        var output = '';
+        $('#canvas').on('click',id ,function(){
+            output = Mustache.render(plantilla, txt);
+            $('#canvas').html(output);
+        });
+    };
 
-	// Manipulate the DOM only when it is ready.
+	// Manipula el DOM cuando el este cargado por completo.
 	require(['domReady!'], function (doc) {
 
-        var output   = '';
+        var output     = '';
+        var referencia = 0;
 
-        // Initialize the activity.
+        // Inicializa la actividad.
         activity.setup();
-
+        
+        // Recarga la actividad cuando se clikea el bonto de recargar pagina.
         $('.reload-button').on('click', function() {
             location.reload();
         });
         
-        function mustache(id,plantilla,txt){
-            $('#canvas').on('click',id ,function(){
-            output = Mustache.render(plantilla,txt);
-            $('#canvas').html(output);
-        });
-        }
-
+        // Carga la plantilla de la pagina inicial.
         $(document).ready(function(){
-            output = Mustache.render(plantilla[2].pag1);
+            output = Mustache.render(plantilla[0].sr);
             $('#canvas').html(output);
         });
         
-        for(var i=0; i<plantilla[5].length; i++){
-            mustache(plantilla[5].pl[i]);
+        // No se.
+        for(var i=0; i<plantilla[1].length; i++){
+            mustache(plantilla[1].pl[i]);
         }
         
-        mustache('.btn_sel_f',plantilla[1].menu);
-        mustache("#exploro",plantilla[3].pag2);
-        mustache('#btn_ovario',plantilla[3].ovario,{text : plantilla[0].contenido.ovarios});
-        mustache('#btn_falopio',plantilla[3].falopio,{text : plantilla[0].contenido.falopio});
-        mustache('#btn_vagina',plantilla[3].vagina,{text : plantilla[0].contenido.vagina});
-        mustache('#btn_ovulo',plantilla[3].ovulo,{text : plantilla[0].contenido.ovulo});
-        mustache('#btn_uretra',plantilla[3].uretra,{text : plantilla[0].contenido.uretra});
-        mustache('#btn_utero',plantilla[3].utero,{text : plantilla[0].contenido.utero});
-        mustache(".btn_atras",plantilla[3].pag2);
-        mustache('.btn_back_menu',plantilla[2].pag1);
+        $('#canvas').on('click', '.btn_sel_f', function(){
+            referencia = $(this).attr('data');
+            console.log(referencia);
+        });
+        $('#canvas').on('click', '.btn_sel_m', function(){
+            referencia = $(this).attr('data');
+            console.log(referencia);
+        });
         
+        // Carga el menu de sistema reproductor femenino
+        mustache('.btn_sel_f', plantilla[0].menu_srf);
+        
+        // Regresa a la seleccion de sistema reproductor
+        mustache('.btn_back_menu',plantilla[0].sr);
+        
+        //carga el menu del sistema reproductor masculino
+        mustache('.btn_sel_m', plantilla[0].menu_srm);
+        
+        //Botones de exploracion de sistema reproductor femenino
+        mustache('#exploro_f', plantilla[0].srf);
+        
+        //botones del los contenidos de sistema femenino
+        mustache('#btn_ovario',plantilla[0].pf, contenido[2]);
+        mustache('#btn_falopio',plantilla[0].pf, contenido[1]);
+        mustache('#btn_vagina',plantilla[0].pf, contenido[5]);
+        mustache('#btn_ovulo',plantilla[0].pf, contenido[0]);
+        mustache('#btn_uretra',plantilla[0].pf, contenido[4]);
+        mustache('#btn_utero',plantilla[0].pf, contenido[3]);
+        mustache(".btn_atrasf",plantilla[0].srf);
+        
+        //Botones de exploracion de sistema reproductor masculino
+        mustache('#exploro_m', plantilla[0].srm);
+        
+         //botones del los contenidos de sistema masculino
+        mustache('#btn_pene',plantilla[0].pm, contenido[11]);
+        mustache('#btn_testiculos',plantilla[0].pm, contenido[10]);
+        mustache('#btn_uretrav',plantilla[0].pm, contenido[9]);
+        mustache('#btn_escroto',plantilla[0].pm, contenido[12]);
+        mustache('#btn_cdeferente',plantilla[0].pm, contenido[8]);
+        mustache('#btn_prostata',plantilla[0].pm, contenido[7]);
+        mustache('#btn_vesicula',plantilla[0].pm, contenido[6]);
+        mustache(".btn_atrasm",plantilla[0].srm);      
 	});
 });
