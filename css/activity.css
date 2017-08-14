@@ -408,3 +408,62 @@
 div {
     
 }
+
+#grafica {
+    position: absolute;
+    width: 990px;
+    height: 725px;
+    top: 20px;
+    left: 180px;
+}
+
+#etiquetas {
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    top: 258px;
+    left: 20px;
+    background: #ffccaa;
+    text-align: center;
+}
+
+.nombre {
+    font-size: 20px;
+    color: purple;
+    background: white;
+    padding: 5px;
+    width: 170px;
+    margin-left: 10px;
+}
+
+#botones {
+    position: absolute;
+    width: 1160px;
+    height: 80px;
+    top: 745px;
+    left: 20px;
+}
+
+#btn_reg_f {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 80px;
+    top: 20px; 
+}
+
+#btn_rev_f {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 980px;
+    top: 20px; 
+}
+
+#btn_rin_f {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 800px;
+    top: 20px; 
+}

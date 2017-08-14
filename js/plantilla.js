@@ -17,7 +17,7 @@ define(function (require) {
             
             'pm' : '<div class="fondo"><div><img id="graficam" src="{{grafica}}"><div class="text_titulo">{{titulo}}</div><p class="text_matrix">{{teoria}}</p></div><button class="btn_atrasm btn_back">Atras</button></div>',
             
-            'juego_f' : '<div class="fondo"><div id="etiquetas"></div><div id="grafica"></div><div id="botones"></div></div>'
+            'juego_f' : '<div class="fondo"><div id="etiquetas">{{#botones}}<p class="nombre">{{boton}}</p>{{/botones}}</div><div id="grafica"><img src="{{grafica}}"></div><div id="botones"><button id="btn_reg_f">Atras</button><button id="btn_rev_f">Comprobar</button><button id="btn_rin_f">Reiniciar</button></div></div>'
         },
         {
             'pl' : ['#nino' , 1 , "menu"]
