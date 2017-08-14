@@ -1,3 +1,5 @@
+# Archivos que no se subiran
+
 dist
 
-*.svg
+img/*.svg
