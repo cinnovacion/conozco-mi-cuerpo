@@ -43,23 +43,11 @@ define(function (require) {
             mustache(plantilla[1].pl[i]);
         }
         
-        $('#canvas').on('click', '.btn_sel_f', function(){
-            referencia = $(this).attr('data');
-            console.log(referencia);
-        });
-        $('#canvas').on('click', '.btn_sel_m', function(){
-            referencia = $(this).attr('data');
-            console.log(referencia);
-        });
-        
         // Carga el menu de sistema reproductor femenino
         mustache('.btn_sel_f', plantilla[0].menu_srf);
         
         // Regresa a la seleccion de sistema reproductor
         mustache('.btn_back_menu',plantilla[0].sr);
-        
-        //carga el menu del sistema reproductor masculino
-        mustache('.btn_sel_m', plantilla[0].menu_srm);
         
         //Botones de exploracion de sistema reproductor femenino
         mustache('#exploro_f', plantilla[0].srf);
@@ -73,6 +61,12 @@ define(function (require) {
         mustache('#btn_utero',plantilla[0].pf, contenido[3]);
         mustache(".btn_atrasf",plantilla[0].srf);
         
+        //Juego Femenino
+        mustache("#juego_f",plantilla[0].juego_f);
+        
+        //carga el menu del sistema reproductor masculino
+        mustache('.btn_sel_m', plantilla[0].menu_srm);
+        
         //Botones de exploracion de sistema reproductor masculino
         mustache('#exploro_m', plantilla[0].srm);
         
@@ -84,6 +78,9 @@ define(function (require) {
         mustache('#btn_cdeferente',plantilla[0].pm, contenido[8]);
         mustache('#btn_prostata',plantilla[0].pm, contenido[7]);
         mustache('#btn_vesicula',plantilla[0].pm, contenido[6]);
-        mustache(".btn_atrasm",plantilla[0].srm);      
+        mustache(".btn_atrasm",plantilla[0].srm);
+        
+        // Juego Masculino
+        mustache("#juego_m",plantilla[0].juego);
 	});
 });

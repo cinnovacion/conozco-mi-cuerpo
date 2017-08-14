@@ -56,7 +56,7 @@
 .text_matrix{
     position: absolute;
     text-align : justify;
-    font-size: 35px;
+    font-size: 30px;
     width: 500px;
     left: 580px;
     top: 170px;
@@ -73,16 +73,9 @@
     border: none;
 }
 
-/* Vista 1 */
-/*#pag1 {
-    height: 845px;
-    width: 1200px;
-    background: url('../img/pag1.png') 0 0 no-repeat;
-}*/
-
 #nina {
-    height: 350px;
-    width: 168px;
+    height: 360px;
+    width: 170px;
     top: 280px;
     left: 290px;
     background: url('../img/btn-fem.png') 0 0 no-repeat;
@@ -92,11 +85,16 @@
     color: #666666;
     font-size: 30px;
     top: 340px;
+    left: 10px;
+}
+
+#nina:hover h3 {
+    color: chartreuse;
 }
 
 #nino {
-    height: 350px;
-    width: 129px;
+    height: 360px;
+    width: 130px;
     top: 280px;
     left: 797px;
     background: url('../img/btn-mas.png') 0 0 no-repeat;
@@ -106,6 +104,11 @@
     color: #666666;
     font-size: 30px;
     top: 340px;
+    left: -5px;
+}
+
+#nino:hover h3 {
+    color: chartreuse;
 }
 
 #exploro_f {
@@ -120,7 +123,11 @@
     color: #666666;
     font-size: 30px;
     top: 340px;
-    left: 144px;
+    left: 130px;
+}
+
+#exploro_f:hover h3 {
+    color: chartreuse;
 }
 
 #exploro_m {
@@ -138,19 +145,46 @@
     left: 144px;
 }
 
-#juego {
+#exploro_m:hover h3 {
+    color: chartreuse;
+}
+
+#juego_f {
     height: 350px;
-    width: 400px;
+    width: 405px;
     top: 280px;
     left: 650px;
     background: url('../img/btn-juego.png') 0 0 no-repeat;
 }
 
-#juego h3 {
+#juego_f h3 {
     color: #666666;
     font-size: 30px;
     top: 340px;
     left: 144px;
+}
+
+#juego_f:hover h3 {
+    color: chartreuse;
+}
+
+#juego_m {
+    height: 350px;
+    width: 405px;
+    top: 280px;
+    left: 650px;
+    background: url('../img/btn-juego.png') 0 0 no-repeat;
+}
+
+#juego_m h3 {
+    color: #666666;
+    font-size: 30px;
+    top: 340px;
+    left: 144px;
+}
+
+#juego_m:hover h3 {
+    color: chartreuse;
 }
 
 #img_srf{
@@ -178,6 +212,7 @@
     width: 518px;
     height: 740px;
 }
+
 /*botones femenino*/
 .btn_radius{
     position: absolute;
@@ -189,40 +224,66 @@
 .btn_radius:hover{
     content: "radio";
 }
+
 #btn_ovario{
     left: 625px;
     top: 115px;
 }
+#btn_ovario:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_falopio{
     left: 715px;
     top: 20px;
 }
+#btn_falopio:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_vagina{
     left: 370px;
     top: 400px;
 }
+#btn_vagina:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_ovulo{
     left: 625px;
     top: 160px;
 }
+#btn_ovulo:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_uretra{
     left: 260px;
     top: 320px;
 }
+#btn_uretra:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_utero{
     left: 370px;
     top: 130px;
 }
-#exp{
-    left: 200px;
-    top: 500px;
+#btn_utero:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
-#jue{
-    position: absolute;
-    left: 700px;
-    top: 500px;
-}
-
 
 /*botones masculino*/
 #graficam{
@@ -235,32 +296,115 @@
 .btn_radius:hover{
     content: "radio";
 }
+
 #btn_escroto{
     left: 33px;
     top: 432px;
 }
+#btn_escroto:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_pene{
     left: 154px;
     top: 420px;
 }
+#btn_pene:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_testiculos{
     left: 199px;
     top: 392px;
 }
+#btn_testiculos:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_uretrav{
     left: 133px;
     top: 307px;
 }
+#btn_uretrav:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_cdeferente{
     left: 260px;
     top: 46px;
 }
+#btn_cdeferente:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_prostata{
     left: 131px;
     top: 192px;
 }
+#btn_prostata:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 #btn_vesicula{
     left: 182px;
     top: 125px;
 }
+#btn_vesicula:hover .popuptext {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
 
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+div {
+    
+}

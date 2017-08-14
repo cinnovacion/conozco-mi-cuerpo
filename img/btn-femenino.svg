@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="167.59601mm"
+   height="349.97726mm"
+   viewBox="0 0 167.59601 349.97726"
    version="1.1"
    id="svg21020"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92+devel unknown"
    sodipodi:docname="btn-femenino.svg">
   <defs
      id="defs21014" />
@@ -25,17 +25,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6826241"
-     inkscape:cx="109.47989"
-     inkscape:cy="913.46779"
+     inkscape:zoom="0.21032801"
+     inkscape:cx="198.56269"
+     inkscape:cy="191.79725"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="708"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
      inkscape:window-x="0"
      inkscape:window-y="32"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata21017">
     <rdf:RDF>
@@ -44,14 +49,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(26.397209,61.398816)">
     <g
        id="g7165-2"
        transform="matrix(5.0334099,2.1597213,-2.1597213,5.0334099,3099.2864,8149.5373)">
@@ -1687,22 +1693,5 @@
        id="path322-56-9-3"
        style="fill:#a63421;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.38084543"
        d="M 50.526919,-49.489605 C 34.114518,-45.00543 4.3996667,-49.303381 1.7185822,-15.310296 1.0700829,-7.0945108 -5.8602058,18.721677 -8.666718,33.843103 -11.242093,47.718469 -15.873605,56.416247 -10.03492,68.659958 -15.088176,56.506073 -9.0594325,47.187729 -6.2748291,33.15243 -3.5592382,19.464384 5.4102083,-6.0275542 6.5396049,-14.028633 11.458122,-48.852608 40.573769,-47.265866 50.526919,-49.489605 Z" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot5589-1"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;line-height:25px;font-family:'A Pompadour Display Sample';-inkscape-font-specification:'A Pompadour Display Sample, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.52941165;stroke:none"
-       transform="matrix(0.44305016,0,0,0.44305016,-222.42108,2449.8414)"
-       inkscape:export-filename="/home/desarrollo/Imágenes/interfaz1.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><flowRegion
-         id="flowRegion5591-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;font-family:'A Pompadour Display Sample';-inkscape-font-specification:'A Pompadour Display Sample, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.52941165"><rect
-           id="rect5593-2"
-           width="3650.7434"
-           height="1717.1174"
-           x="-1192.1854"
-           y="-4820.8755"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;font-family:'A Pompadour Display Sample';-inkscape-font-specification:'A Pompadour Display Sample, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.52941165" /></flowRegion><flowPara
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;font-family:'A Pompadour Display Sample';-inkscape-font-specification:'A Pompadour Display Sample, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:0.52941165"
-         id="flowPara5607-5">Femenino</flowPara></flowRoot>  </g>
+  </g>
 </svg>
