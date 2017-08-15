@@ -162,8 +162,18 @@ define(function (require) {
         });
         
         $(document).on('click', '#btn_rev_f', function(){
-            if(comprovar == 6) $('#myModal').css('display', 'block');
-            else alert('NO GANO');
+            if(comprovar == 6) {
+                $('.modal-content img').attr('src', '');
+                $('#Modal').css('display', 'block');
+            } 
+            else {
+                $('.modal-content img').attr('src', '');
+                $('#Modal').css('display', 'block');
+            } 
+        });
+        
+        $(document).on('click', '#Close', function(){
+            $('#Modal').css('display', 'none');
         });
 	});
 });

@@ -435,7 +435,7 @@
     left: 20px;
     background: #ffccaa;
     text-align: center;
-    z-index: 5;
+    z-index: 3;
 }
 
 .nombre {
@@ -543,8 +543,7 @@
     border: 1px solid #888;
     width: 80%; /* Podria ser mas o menos, depende del tamaño de la pantalla */
     text-align: center;
-    border: 10px solid #87766C;
-    border-radius: 10px;
+    z-index: 10;
 }
 
 .modal-content img {
@@ -558,7 +557,7 @@
     /*float: right;*/
     font-size: 30px;
     background-color: darkcyan;
-        width: 130px;
+    width: 130px;
     height: 40px;
 }
 
