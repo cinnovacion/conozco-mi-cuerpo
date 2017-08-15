@@ -17,7 +17,7 @@ define(function (require) {
             
             'pm' : '<div id="fondo"><div><img id="graficam" src="{{grafica}}"><div class="text_titulo">{{titulo}}</div><p class="text_matrix">{{teoria}}</p></div><button class="btn_atrasm btn_back">Atras</button></div>',
             
-            'juego_f' : '<div id="fondo"><h1 id="insturccion">Arratre los nombre a su lugar correspondiente.</h1><div id="etiquetas">{{#botones}}<p class="nombre">{{boton}}</p>{{/botones}}</div><div id="grafica">{{#respuestas}}<div class="respuesta" id="{{res}}"></div>{{/respuestas}}<img src="{{grafica}}"></div><div id="botones"><button id="btn_reg_f">Atras</button><button id="btn_rev_f">Comprobar</button><button id="btn_rin_f">Reiniciar</button></div></div>'
+            'juego_f' : '<div id="fondo"><h1 id="insturccion">Arratre los nombre a su lugar correspondiente.</h1><div id="etiquetas">{{#botones}}<p class="nombre">{{boton}}</p>{{/botones}}</div><div id="grafica">{{#respuestas}}<div class="respuesta" id="{{res}}"></div>{{/respuestas}}<img src="{{grafica}}"></div><div id="botones"><button id="btn_reg_f">Atras</button><button id="btn_rev_f">Comprobar</button><button id="btn_rin_f">Reiniciar</button></div><div id="Modal" class="modal"><div class="modal-content"><img src=""><button id="dd_close" class="close">Aceptar</button></div></div></div>'
         },
         {
             'pl' : ['#nino' , 1 , "menu"]
