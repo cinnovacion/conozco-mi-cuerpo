@@ -174,6 +174,7 @@ define(function (require) {
         
         $(document).on('click', '#Close', function(){
             $('#Modal').css('display', 'none');
+            if(comprovar == 6) 
         });
 	});
 });
