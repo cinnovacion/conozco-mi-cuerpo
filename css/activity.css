@@ -1,11 +1,11 @@
 #main-toolbar #activity-button {
-  background-image: url(../activity/icono-cmc.png);
+  background-image: url(../activity/icono-cmc.svg);
 }
 
 #fondo {
     height: 845px;
     width: 1200px;
-    background: url('../img/pag1.png') 0 0 no-repeat;
+    background: url('../img/fondo.svg') 0 0 no-repeat;
 }
 
 .btn_atras{
@@ -78,7 +78,7 @@
     width: 170px;
     top: 280px;
     left: 290px;
-    background: url('../img/btn-fem.png') 0 0 no-repeat;
+    background: url('../img/btn-fem.svg') 0 0 no-repeat;
 }
 
 #nina h3 {
@@ -97,7 +97,7 @@
     width: 130px;
     top: 280px;
     left: 797px;
-    background: url('../img/btn-mas.png') 0 0 no-repeat;
+    background: url('../img/btn-mas.svg') 0 0 no-repeat;
 }
 
 #nino h3 {
@@ -116,7 +116,7 @@
     width: 400px;
     top: 280px;
     left: 150px;
-    background: url('../img/btn-exploro.png') 0 0 no-repeat;
+    background: url('../img/btn-exploro.svg') 0 0 no-repeat;
 }
 
 #exploro_f h3 {
@@ -135,7 +135,7 @@
     width: 400px;
     top: 280px;
     left: 150px;
-    background: url('../img/btn-exploro.png') 0 0 no-repeat;
+    background: url('../img/btn-exploro.svg') 0 0 no-repeat;
 }
 
 #exploro_m h3 {
@@ -154,7 +154,7 @@
     width: 405px;
     top: 280px;
     left: 650px;
-    background: url('../img/btn-juego.png') 0 0 no-repeat;
+    background: url('../img/btn-juego.svg') 0 0 no-repeat;
 }
 
 #juego_f h3 {
@@ -173,7 +173,7 @@
     width: 405px;
     top: 280px;
     left: 650px;
-    background: url('../img/btn-juego.png') 0 0 no-repeat;
+    background: url('../img/btn-juego.svg') 0 0 no-repeat;
 }
 
 #juego_m h3 {
@@ -193,7 +193,7 @@
     height: 547px;
     top: 220px;
     left: 200px;
-    background: url('../img/femenino/srf.png') 0 0 no-repeat;
+    background: url('../img/femenino/srf.svg') 0 0 no-repeat;
 }
 
 #img_srm{
@@ -202,7 +202,7 @@
     height: 547px;
     top: 220px;
     left: 424px;
-    background: url('../img/masculino/srm.png') no-repeat;
+    background: url('../img/masculino/srm.svg') no-repeat;
 }
 
 #grafica{
