@@ -18,31 +18,40 @@ define(function (require) {
         });
     };
     
-    var moveItem = function(event) {
-        // elemento actual
-        var target = event.target;
-        // Captura el valor en el eje x + cambio de lugar
-        if (!target.hasAttribute('data-x')) {
-            x0 = $(target).position().top;
-            y0 = $(target).position().left;
-        }
-        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
-        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-        // Traslada los elementos
-        target.style.top  = x0 + 'px';
-        target.style.left = y0 + 'px';
+    function dragMoveListener (event) {
+        var target = event.target,
+            // Mantener la posición arrastrada en los atributos data-x / data-y
+            x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+            y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+        // Trasladar el elemento
         target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
-        // Actualiza los atributos del elemento
+        // Actualizar los atributos de posición
         target.setAttribute('data-x', x);
         target.setAttribute('data-y', y);
-        console.log(ejer + '!');
-    };
+    }
+    
+    /**
+     * Funcion que remueve los acentos
+     */
+    function remove_accent(str) {
+        // Mapa de acentos
+        var map={'À':'A','Á':'A','Â':'A','Ã':'A','Ä':'A','Å':'A','Æ':'AE','Ç':'C','È':'E','É':'E','Ê':'E','Ë':'E','Ì':'I','Í':'I','Î':'I','Ï':'I','Ð':'D','Ñ':'N','Ò':'O','Ó':'O','Ô':'O','Õ':'O','Ö':'O','Ø':'O','Ù':'U','Ú':'U','Û':'U','Ü':'U','Ý':'Y','ß':'s','à':'a','á':'a','â':'a','ã':'a','ä':'a','å':'a','æ':'ae','ç':'c','è':'e','é':'e','ê':'e','ë':'e','ì':'i','í':'i','î':'i','ï':'i','ñ':'n','ò':'o','ó':'o','ô':'o','õ':'o','ö':'o','ø':'o','ù':'u','ú':'u','û':'u','ü':'u','ý':'y','ÿ':'y','Ā':'A','ā':'a','Ă':'A','ă':'a','Ą':'A','ą':'a','Ć':'C','ć':'c','Ĉ':'C','ĉ':'c','Ċ':'C','ċ':'c','Č':'C','č':'c','Ď':'D','ď':'d','Đ':'D','đ':'d','Ē':'E','ē':'e','Ĕ':'E','ĕ':'e','Ė':'E','ė':'e','Ę':'E','ę':'e','Ě':'E','ě':'e','Ĝ':'G','ĝ':'g','Ğ':'G','ğ':'g','Ġ':'G','ġ':'g','Ģ':'G','ģ':'g','Ĥ':'H','ĥ':'h','Ħ':'H','ħ':'h','Ĩ':'I','ĩ':'i','Ī':'I','ī':'i','Ĭ':'I','ĭ':'i','Į':'I','į':'i','İ':'I','ı':'i','Ĳ':'IJ','ĳ':'ij','Ĵ':'J','ĵ':'j','Ķ':'K','ķ':'k','Ĺ':'L','ĺ':'l','Ļ':'L','ļ':'l','Ľ':'L','ľ':'l','Ŀ':'L','ŀ':'l','Ł':'L','ł':'l','Ń':'N','ń':'n','Ņ':'N','ņ':'n','Ň':'N','ň':'n','ŉ':'n','Ō':'O','ō':'o','Ŏ':'O','ŏ':'o','Ő':'O','ő':'o','Œ':'OE','œ':'oe','Ŕ':'R','ŕ':'r','Ŗ':'R','ŗ':'r','Ř':'R','ř':'r','Ś':'S','ś':'s','Ŝ':'S','ŝ':'s','Ş':'S','ş':'s','Š':'S','š':'s','Ţ':'T','ţ':'t','Ť':'T','ť':'t','Ŧ':'T','ŧ':'t','Ũ':'U','ũ':'u','Ū':'U','ū':'u','Ŭ':'U','ŭ':'u','Ů':'U','ů':'u','Ű':'U','ű':'u','Ų':'U','ų':'u','Ŵ':'W','ŵ':'w','Ŷ':'Y','ŷ':'y','Ÿ':'Y','Ź':'Z','ź':'z','Ż':'Z','ż':'z','Ž':'Z','ž':'z','ſ':'s','ƒ':'f','Ơ':'O','ơ':'o','Ư':'U','ư':'u','Ǎ':'A','ǎ':'a','Ǐ':'I','ǐ':'i','Ǒ':'O','ǒ':'o','Ǔ':'U','ǔ':'u','Ǖ':'U','ǖ':'u','Ǘ':'U','ǘ':'u','Ǚ':'U','ǚ':'u','Ǜ':'U','ǜ':'u','Ǻ':'A','ǻ':'a','Ǽ':'AE','ǽ':'ae','Ǿ':'O','ǿ':'o'};
+        var res=''; // Variable donde se almacenara la palabre sin acentos
+        // Ciclo que recorre cada letra de la palabra
+        for (var i=0; i<str.length; i++) {
+            c = str.charAt(i); // Captura cada letra de la palabra
+            res += map[c] || c; // Guarda la letra procesada y sin acentos
+        }
+        // Retorna la palabra sin acentos
+        return res;
+    }
 
 	// Manipula el DOM cuando el este cargado por completo.
 	require(['domReady!'], function (doc) {
 
         var output     = '';
         var referencia = 0;
+        var comprovar  = 0;
 
         // Inicializa la actividad.
         activity.setup();
@@ -84,7 +93,10 @@ define(function (require) {
         
         //Juego Femenino
         mustache("#juego_f",plantilla[0].juego_f, contenido[13]);
+        
         mustache("#btn_reg_f",plantilla[0].menu_srf);
+        //Reiniciar el juego
+        mustache("#btn_rin_f",plantilla[0].juego_f, contenido[13]);
         
         //carga el menu del sistema reproductor masculino
         mustache('.btn_sel_m', plantilla[0].menu_srm);
@@ -106,16 +118,52 @@ define(function (require) {
         // Juego Masculino
         mustache("#juego_m",plantilla[0].juego_m); 
         
-        var items = interact('.nombre');
-        // Atributos de los objetos arrastrables
-        items.draggable({
-            initial:true,
+        // Elementos de destino con la clase "arrastrable"
+        interact('.nombre').draggable({
+            // Habilitar lanzamiento inercial
+            inertia: true,
+            // Mantener el elemento dentro del área de su padre
             restrict: {
                 restriction: document.getElementById('canvas'),
                 endOnly: true,
                 elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
             },
-            onmove:moveItem,
+            // Habilitar autoScroll
+            autoScroll: true,
+            // Llamar a esta función en cada evento de movimiento de arrastre
+            onmove: dragMoveListener
+        });
+        
+        // Permiten arrastrar los arrastradores a esta
+        interact('.respuesta').dropzone({
+            // Sólo acepta elementos que coincidan con este selector CSS
+            accept: '.nombre',
+            // Requiere un solapamiento de 75% para que una gota sea posible
+            overlap: 0.75,
+            // Escuchar eventos relacionados con la caída:
+            ondragenter: function (event) {
+                var draggableElement = event.relatedTarget, dropzoneElement = event.target;
+                // retroalimentación de la posibilidad de una caída
+                dropzoneElement.classList.add('drop-target');
+                var arrastrable = remove_accent(draggableElement.textContent.toLowerCase()).replace(/\s/g, '');
+                console.log(arrastrable + '-' + dropzoneElement.id);
+                if(arrastrable === dropzoneElement.id)
+                    comprovar++;
+                console.log(comprovar);
+            },
+            ondragleave: function (event) {
+                // Eliminar el estilo de retroalimentación de la caída
+                event.target.classList.remove('drop-target');
+                if(remove_accent(draggableElement.textContent.toLowerCase()) === dropzoneElement.id)
+                    if(comprovar > 0)
+                        comprovar--;
+                console.log(comprovar);
+            }
+        });
+        
+        $(document).on('click', '#btn_rev_f', function(){
+            if(comprovar == 6) alert('GANO');
+            else alert('NO GANO');
         });
 	});
 });

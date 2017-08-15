@@ -69,7 +69,8 @@ define(function (require) {
         },
         {//13
             'grafica' : '../img/femenino/srf_juego.png',
-            'botones' : [{ 'boton' : 'Útero' },{ 'boton': 'Trompa de Falopio' },{ 'boton': 'Ovario' },{ 'boton': 'Óvulo' },{ 'boton': 'Uretra' },{ 'boton': 'Vagina' }]
+            'botones' : [{ 'boton' : 'Útero' },{ 'boton': 'Trompa de Falopio' },{ 'boton': 'Ovario' },{ 'boton': 'Óvulo' },{ 'boton': 'Uretra' },{ 'boton': 'Vagina' }],
+            'respuestas' : [{ 'res' : 'utero' },{ 'res': 'trompadefalopio' },{ 'res': 'ovario' },{ 'res': 'ovulo' },{ 'res': 'uretra' },{'res': 'vagina' }]
         }
     ];
 });

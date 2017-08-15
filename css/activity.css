@@ -2,7 +2,7 @@
   background-image: url(../activity/icono-cmc.png);
 }
 
-.fondo {
+#fondo {
     height: 845px;
     width: 1200px;
     background: url('../img/pag1.png') 0 0 no-repeat;
@@ -213,6 +213,12 @@
     height: 740px;
 }
 
+#grafica img {
+    top: 150px;
+    position: absolute;
+    left: 140px;
+}
+
 /*botones femenino*/
 .btn_radius{
     position: absolute;
@@ -405,8 +411,12 @@
     from {opacity: 0;}
     to {opacity:1 ;}
 }
-div {
-    
+
+#insturccion {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    font-size: 40px;
 }
 
 #grafica {
@@ -425,6 +435,7 @@ div {
     left: 20px;
     background: #ffccaa;
     text-align: center;
+    z-index: 5;
 }
 
 .nombre {
@@ -466,4 +477,46 @@ div {
     height: 50px;
     left: 800px;
     top: 20px; 
+}
+
+.respuesta {
+    background: #555555;
+    width: 200px;
+    height: 50px;
+    z-index: 1;
+    position: absolute;
+}
+
+#utero {
+    left: 430px;
+    top: 250px;
+}
+
+#trompadefalopio {
+    left: 760px;
+    top: 200px;
+}
+
+#ovario {
+    left: 700px;
+    top: 280px;
+}
+
+#ovulo {
+    left: 700px;
+    top: 400px;
+}
+
+#uretra {
+    left: 250px;
+    top: 450px;
+}
+
+#vagina {
+    left: 430px;
+    top: 550px;
+}
+
+.drop-target {
+    background: #2ecc71;
 }
