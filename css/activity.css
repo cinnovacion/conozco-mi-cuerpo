@@ -5,7 +5,7 @@
 #fondo {
     height: 845px;
     width: 1200px;
-    background: url('../img/fondo.svg') 0 0 no-repeat;
+    background: url('../img/fondo.png') 0 0 no-repeat;
 }
 
 .btn_atras{
@@ -78,7 +78,7 @@
     width: 170px;
     top: 280px;
     left: 290px;
-    background: url('../img/btn-fem.svg') 0 0 no-repeat;
+    background: url('../img/btn-fem.png') 0 0 no-repeat;
 }
 
 #nina h3 {
@@ -97,7 +97,7 @@
     width: 130px;
     top: 280px;
     left: 797px;
-    background: url('../img/btn-mas.svg') 0 0 no-repeat;
+    background: url('../img/btn-mas.png') 0 0 no-repeat;
 }
 
 #nino h3 {
@@ -116,7 +116,7 @@
     width: 400px;
     top: 280px;
     left: 150px;
-    background: url('../img/btn-exploro.svg') 0 0 no-repeat;
+    background: url('../img/btn-exploro.png') 0 0 no-repeat;
 }
 
 #exploro_f h3 {
@@ -135,7 +135,7 @@
     width: 400px;
     top: 280px;
     left: 150px;
-    background: url('../img/btn-exploro.svg') 0 0 no-repeat;
+    background: url('../img/btn-exploro.png') 0 0 no-repeat;
 }
 
 #exploro_m h3 {
@@ -154,7 +154,7 @@
     width: 405px;
     top: 280px;
     left: 650px;
-    background: url('../img/btn-juego.svg') 0 0 no-repeat;
+    background: url('../img/btn-juego.png') 0 0 no-repeat;
 }
 
 #juego_f h3 {
@@ -173,7 +173,7 @@
     width: 405px;
     top: 280px;
     left: 650px;
-    background: url('../img/btn-juego.svg') 0 0 no-repeat;
+    background: url('../img/btn-juego.png') 0 0 no-repeat;
 }
 
 #juego_m h3 {
@@ -193,7 +193,7 @@
     height: 547px;
     top: 220px;
     left: 200px;
-    background: url('../img/femenino/srf.svg') 0 0 no-repeat;
+    background: url('../img/femenino/srf.png') 0 0 no-repeat;
 }
 
 #img_srm{
@@ -202,12 +202,12 @@
     height: 547px;
     top: 220px;
     left: 424px;
-    background: url('../img/masculino/srm.svg') no-repeat;
+    background: url('../img/masculino/srm.png') no-repeat;
 }
 
 #grafica{
     position: absolute;
-    left: 50px;
+    left: 160px;
     top: 50px;
     width: 518px;
     height: 740px;
@@ -419,7 +419,7 @@
     font-size: 40px;
 }
 
-#grafica {
+#graficaf {
     position: absolute;
     width: 990px;
     height: 725px;
@@ -430,7 +430,7 @@
 #etiquetas {
     position: absolute;
     width: 200px;
-    height: 350px;
+    height: 400px;
     top: 258px;
     left: 20px;
     background: #ffccaa;
@@ -519,6 +519,60 @@
 
 .drop-target {
     background: #2ecc71;
+}
+
+#btn_reg_m {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 80px;
+    top: 20px; 
+}
+
+#btn_rev_m {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 980px;
+    top: 20px; 
+}
+
+#btn_rin_m {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 800px;
+    top: 20px; 
+}
+
+#escroto {
+    top: 590px;
+    left: 220px;
+}
+
+#pene {
+    top: 640px;
+    left: 515px;
+}
+
+#testiculo {
+    top: 560px;
+    left: 600px;
+}
+
+#prostata {
+    top: 355px;
+    left: 520px;
+}
+
+#vesiculaseminal {
+    top: 290px;
+    left: 330px;
+}
+
+#conductodereferente {
+    top: 230px;
+    left: 630px;
 }
 
 /* Modal (fondo) */

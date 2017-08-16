@@ -116,7 +116,9 @@ define(function (require) {
         mustache(".btn_atrasm",plantilla[0].srm);
         
         // Juego Masculino
-        mustache("#juego_m",plantilla[0].juego_m); 
+        mustache("#juego_m",plantilla[0].juego_m, contenido[14]);
+        //Reiniciar el juego
+        mustache("#btn_rin_m",plantilla[0].juego_f, contenido[13]);
         
         // Elementos de destino con la clase "arrastrable"
         interact('.nombre').draggable({
@@ -174,7 +176,7 @@ define(function (require) {
         
         $(document).on('click', '#Close', function(){
             $('#Modal').css('display', 'none');
-            if(comprovar == 6) 
+            if(comprovar == 6) location.reload();
         });
 	});
 });
