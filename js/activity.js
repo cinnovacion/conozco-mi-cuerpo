@@ -120,6 +120,8 @@ define(function (require) {
         //Reiniciar el juego
         mustache("#btn_rin_m",plantilla[0].juego_f, contenido[13]);
         
+        mustache("#btn_reg_m",plantilla[0].menu_srm);
+        
         // Elementos de destino con la clase "arrastrable"
         interact('.nombre').draggable({
             // Habilitar lanzamiento inercial
@@ -163,13 +165,13 @@ define(function (require) {
             }
         });
         
-        $(document).on('click', '#btn_rev_f', function(){
+        $(document).on('click', '#btn_rev', function(){
             if(comprovar == 6) {
-                $('.modal-content img').attr('src', '');
+                $('.modal-content img').attr('src', '../img/ganador.png');
                 $('#Modal').css('display', 'block');
             } 
             else {
-                $('.modal-content img').attr('src', '');
+                $('.modal-content img').attr('src', '../img/perdedor.png');
                 $('#Modal').css('display', 'block');
             } 
         });
