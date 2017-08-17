@@ -118,7 +118,7 @@ define(function (require) {
         // Juego Masculino
         mustache("#juego_m",plantilla[0].juego_m, contenido[14]);
         //Reiniciar el juego
-        mustache("#btn_rin_m",plantilla[0].juego_m, contenido[13]);
+        mustache("#btn_rin_m",plantilla[0].juego_m, contenido[14]);
         
         mustache("#btn_reg_m",plantilla[0].menu_srm);
         
