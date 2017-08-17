@@ -420,11 +420,11 @@
 }
 
 #graficaf {
-    position: absolute;
-    width: 990px;
-    height: 725px;
-    top: 20px;
-    left: 180px;
+    osition: absolute;
+    left: 50px;
+    top: 50px;
+    width: 518px;
+    height: 740px;
 }
 
 #etiquetas {
