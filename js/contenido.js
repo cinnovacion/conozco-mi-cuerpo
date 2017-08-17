@@ -68,9 +68,14 @@ define(function (require) {
             'grafica' : '../img/masculino/escroto.svg'
         },
         {//13
-            'grafica' : '../img/femenino/srf_juego.svg',
-            'botones' : [{ 'boton' : 'Útero' },{ 'boton': 'Trompa de Falopio' },{ 'boton': 'Ovario' },{ 'boton': 'Óvulo' },{ 'boton': 'Uretra' },{ 'boton': 'Vagina' }],
+            'grafica' : '../img/femenino/srf_juego.png',
+            'botones' : [{ 'boton' : 'Útero' },{ 'boton': 'Trompa de Falopio' },{ 'boton': 'Ovario' },{ 'boton': 'Óvulo' },{ 'boton': 'Úretra' },{ 'boton': 'Vagina' }],
             'respuestas' : [{ 'res' : 'utero' },{ 'res': 'trompadefalopio' },{ 'res': 'ovario' },{ 'res': 'ovulo' },{ 'res': 'uretra' },{'res': 'vagina' }]
+        },
+        {//14
+            'grafica' : '../img/masculino/srm_juego.png',
+            'botones' : [{ 'boton' : 'Escroto' },{ 'boton': 'Pene' },{ 'boton': 'Testiculo' },{ 'boton': 'Próstata' },{ 'boton': 'Úretra' },{ 'boton': 'Vesícula Seminal' },{ 'boton': 'Conducto Deferente' }],
+            'respuestas' : [{ 'res' : 'escroto' },{ 'res': 'pene' },{ 'res': 'testiculo' },{ 'res': 'prostata' },{ 'res': 'uretra' },{'res': 'vesiculaseminal' },{'res': 'conductodeferente' }]
         }
     ];
 });

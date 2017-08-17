@@ -161,9 +161,20 @@ define(function (require) {
             }
         });
         
-        $(document).on('click', '#btn_rev_f', function(){
-            if(comprovar == 6) alert('GANO');
-            else alert('NO GANO');
+        $(document).on('click', '#btn_rev', function(){
+            if(comprovar == 6) {
+                $('.modal-content img').attr('src', '../img/ganador.png');
+                $('#Modal').css('display', 'block');
+            } 
+            else {
+                $('.modal-content img').attr('src', '../img/perdedor.png');
+                $('#Modal').css('display', 'block');
+            } 
+        });
+        
+        $(document).on('click', '#Close', function(){
+            $('#Modal').css('display', 'none');
+            if(comprovar == 6) location.reload();
         });
 	});
 });

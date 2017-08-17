@@ -1,6 +1,6 @@
 [Activity]
 name = Conozco mi cuerpo
-activity_version = 1.0.0
+activity_version = 1.2.1
 bundle_id = org.sugarlabs.Conozcomicuerpo
 exec = sugar-activity-web
 icon = activity-icon
