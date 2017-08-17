@@ -67,11 +67,6 @@ define(function (require) {
             $('#canvas').html(output);
         });
         
-        // No se.
-        for(var i=0; i<plantilla[1].length; i++){
-            mustache(plantilla[1].pl[i]);
-        }
-        
         // Carga el menu de sistema reproductor femenino
         mustache('.btn_sel_f', plantilla[0].menu_srf);
         
