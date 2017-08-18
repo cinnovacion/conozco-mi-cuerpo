@@ -52,6 +52,7 @@ define(function (require) {
         var output     = '';
         var referencia = 0;
         var comprovar  = 0;
+        var movx, movy = 0;
 
         // Inicializa la actividad.
         activity.setup();
@@ -87,11 +88,29 @@ define(function (require) {
         mustache(".btn_atrasf",plantilla[0].srf);
         
         //Juego Femenino
-        mustache("#juego_f",plantilla[0].juego_f, contenido[13]);
+        //mustache("#juego_f",plantilla[0].juego_f, contenido[13]);
+        $('#canvas').on('click', '#juego_f',function(){
+            output = Mustache.render(plantilla[0].juego_f, contenido[13]);
+            $('#canvas').html(output);
+            var alto = 250;
+            $('.nombre').each(function(){
+                $(this).css({'top':alto+'px', 'left':'30px'});
+                alto += 50;
+            });
+        });
         
         mustache("#btn_reg_f",plantilla[0].menu_srf);
         //Reiniciar el juego
-        mustache("#btn_rin_f",plantilla[0].juego_f, contenido[13]);
+        //mustache("#btn_rin_f",plantilla[0].juego_f, contenido[13]);
+        $('#canvas').on('click', '#btn_rin_f',function(){
+            output = Mustache.render(plantilla[0].juego_f, contenido[13]);
+            $('#canvas').html(output);
+            var alto = 250;
+            $('.nombre').each(function(){
+                $(this).css({'top':alto+'px', 'left':'30px'});
+                alto += 50;
+            });
+        });
         
         //carga el menu del sistema reproductor masculino
         mustache('.btn_sel_m', plantilla[0].menu_srm);
@@ -111,9 +130,27 @@ define(function (require) {
         mustache(".btn_atrasm",plantilla[0].srm);
         
         // Juego Masculino
-        mustache("#juego_m",plantilla[0].juego_m, contenido[14]);
+        //mustache("#juego_m",plantilla[0].juego_m, contenido[14]);
+        $('#canvas').on('click', '#juego_m',function(){
+            output = Mustache.render(plantilla[0].juego_m, contenido[14]);
+            $('#canvas').html(output);
+            var alto = 250;
+            $('.nombre').each(function(){
+                $(this).css({'top':alto+'px', 'left':'30px'});
+                alto += 50;
+            });
+        });
         //Reiniciar el juego
-        mustache("#btn_rin_m",plantilla[0].juego_m, contenido[14]);
+        //mustache("#btn_rin_m",plantilla[0].juego_m, contenido[14]);
+        $('#canvas').on('click', '#btn_rin_m',function(){
+            output = Mustache.render(plantilla[0].juego_m, contenido[14]);
+            $('#canvas').html(output);
+            var alto = 250;
+            $('.nombre').each(function(){
+                $(this).css({'top':alto+'px', 'left':'30px'});
+                alto += 50;
+            });
+        });
         
         mustache("#btn_reg_m",plantilla[0].menu_srm);
         
@@ -123,15 +160,16 @@ define(function (require) {
             inertia: true,
             // Mantener el elemento dentro del área de su padre
             restrict: {
-                restriction: document.getElementById('canvas'),
+                restriction: "parent",
                 endOnly: true,
                 elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
             },
             // Habilitar autoScroll
-            autoScroll: true,
+            //autoScroll: true,
             // Llamar a esta función en cada evento de movimiento de arrastre
             onmove: dragMoveListener
         });
+        window.dragMoveListener = dragMoveListener;
         
         // Permiten arrastrar los arrastradores a esta
         interact('.respuesta').dropzone({
@@ -145,10 +183,8 @@ define(function (require) {
                 // retroalimentación de la posibilidad de una caída
                 dropzoneElement.classList.add('drop-target');
                 var arrastrable = remove_accent(draggableElement.textContent.toLowerCase()).replace(/\s/g, '');
-                console.log(arrastrable + '-' + dropzoneElement.id);
                 if(arrastrable === dropzoneElement.id)
                     comprovar++;
-                console.log(comprovar);
             },
             ondragleave: function (event) {
                 // Eliminar el estilo de retroalimentación de la caída
@@ -156,7 +192,6 @@ define(function (require) {
                 if(remove_accent(draggableElement.textContent.toLowerCase()) === dropzoneElement.id)
                     if(comprovar > 0)
                         comprovar--;
-                console.log(comprovar);
             }
         });
         
