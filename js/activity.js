@@ -18,18 +18,6 @@ define(function (require) {
         });
     };
     
-    function dragMoveListener (event) {
-        var target = event.target,
-            // Mantener la posición arrastrada en los atributos data-x / data-y
-            x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
-            y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-        // Trasladar el elemento
-        target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
-        // Actualizar los atributos de posición
-        target.setAttribute('data-x', x);
-        target.setAttribute('data-y', y);
-    }
-    
     /**
      * Funcion que remueve los acentos
      */
@@ -49,10 +37,11 @@ define(function (require) {
 	// Manipula el DOM cuando el este cargado por completo.
 	require(['domReady!'], function (doc) {
 
-        var output     = '';
-        var referencia = 0;
-        var comprovar  = 0;
-        var movx, movy = 0;
+        var output = '';
+        var movx   = 0;
+        var movy   = 0;
+        var comprv = {};
+        var comprovar = 0;
 
         // Inicializa la actividad.
         activity.setup();
@@ -165,11 +154,28 @@ define(function (require) {
                 elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
             },
             // Habilitar autoScroll
-            //autoScroll: true,
+            autoScroll: true,
             // Llamar a esta función en cada evento de movimiento de arrastre
-            onmove: dragMoveListener
+            onmove: function (event) {
+                var target = event.target,
+                    // Mantener la posición arrastrada en los atributos data-x / data-y
+                    x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+                    y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+                // Trasladar el elemento
+                target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+                // Actualizar los atributos de posición
+                target.setAttribute('data-x', x);
+                target.setAttribute('data-y', y);
+            },
+            onend: function (event){
+                var target = event.target;
+                if((target.getAttribute('data')|0) == 0) {
+                    target.style.webkitTransform = target.style.transform = 'translate(' + movx + 'px, ' + movy + 'px)';
+                    target.setAttribute('data-x', movx);
+                    target.setAttribute('data-y', movy);
+                }
+            }
         });
-        window.dragMoveListener = dragMoveListener;
         
         // Permiten arrastrar los arrastradores a esta
         interact('.respuesta').dropzone({
@@ -182,33 +188,38 @@ define(function (require) {
                 var draggableElement = event.relatedTarget, dropzoneElement = event.target;
                 // retroalimentación de la posibilidad de una caída
                 dropzoneElement.classList.add('drop-target');
+                draggableElement.setAttribute('data', '1');
                 var arrastrable = remove_accent(draggableElement.textContent.toLowerCase()).replace(/\s/g, '');
-                if(arrastrable === dropzoneElement.id)
-                    comprovar++;
+                comprv[dropzoneElement.id] = arrastrable;
             },
             ondragleave: function (event) {
+                var draggableElement = event.relatedTarget, dropzoneElement = event.target;
                 // Eliminar el estilo de retroalimentación de la caída
-                event.target.classList.remove('drop-target');
-                if(remove_accent(draggableElement.textContent.toLowerCase()) === dropzoneElement.id)
-                    if(comprovar > 0)
-                        comprovar--;
+                dropzoneElement.classList.remove('drop-target');
+                draggableElement.setAttribute('data', '0');
             }
         });
         
         $(document).on('click', '#btn_rev', function(){
-            if(comprovar == 6) {
+            comprovar = 0;
+            $.each(comprv, function(index, value){
+                if(index === value) comprovar++;
+            });
+            
+            if(comprovar == $('.nombre').length) {
                 $('.modal-content img').attr('src', '../img/ganador.png');
                 $('#Modal').css('display', 'block');
             } 
             else {
                 $('.modal-content img').attr('src', '../img/perdedor.png');
                 $('#Modal').css('display', 'block');
-            } 
+            }
         });
         
         $(document).on('click', '#Close', function(){
             $('#Modal').css('display', 'none');
-            if(comprovar == 6) location.reload();
+            if(comprovar == $('.nombre').length) 
+                location.reload();
         });
 	});
 });

@@ -616,7 +616,7 @@
     cursor: pointer;
 }
 
-#triangulo {
+#triangulo_m {
     position: absolute;
     left: 610px;
     top: 500px;
@@ -624,4 +624,16 @@
     border-left: 77px solid #555555;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
+}
+
+#triangulo_f {
+    position: absolute;
+    top: 300px;
+    left: 859px;
+    width: 0;
+    height: 0;
+    border-right: 102px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 50px solid #555555;
 }
