@@ -2,6 +2,15 @@
   background-image: url(../activity/activity-icon.svg);
 }
 
+#activity-palette {
+    display: none;
+}
+
+#canvas {
+    width: 1200px;
+    height: 845px;
+}
+
 #fondo {
     height: 845px;
     width: 1200px;
@@ -26,10 +35,10 @@
 
 .btn_back{
     position: absolute;
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 70px;
     left: 80px;
-    top: 720px; 
+    top: 710px; 
 }
 
 .objeto {
@@ -39,7 +48,7 @@
 .titulo {
     font-size: 50px;
     top: 20px;
-    left: 200px;
+    left: 100px;
     color: #666666;
     text-align: center;
 }
@@ -202,7 +211,7 @@
     height: 547px;
     top: 220px;
     left: 424px;
-    background: url('../img/masculino/srm.png') no-repeat;
+    background: url('../img/masculino/srm.png') 0 0 no-repeat;
 }
 
 #grafica{
@@ -231,10 +240,77 @@
     content: "radio";
 }
 
-#btn_ovario{
+/* The actual popup */
+.popup .popuptext {
+    /*visibility: hidden;*/
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -20%;
+    left: -328%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext:after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 103%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #555;
+}
+
+.popup .popupinverse {
+    /*visibility: hidden;*/
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -20%;
+    left: 430%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popupinverse:after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: -3%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+#btn_ovario {
     left: 625px;
     top: 115px;
 }
+
 #btn_ovario:hover .popuptext {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
@@ -265,7 +341,7 @@
     left: 625px;
     top: 160px;
 }
-#btn_ovulo:hover .popuptext {
+#btn_ovulo:hover .popupinverse {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
@@ -315,7 +391,7 @@
 
 #btn_pene{
     left: 154px;
-    top: 420px;
+    top: 470px;
 }
 #btn_pene:hover .popuptext {
     visibility: visible;
@@ -373,45 +449,6 @@
     animation: fadeIn 1s;
 }
 
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
-
 #insturccion {
     position: absolute;
     top: 20px;
@@ -420,7 +457,7 @@
 }
 
 #graficaf {
-    osition: absolute;
+    position: absolute;
     left: 50px;
     top: 50px;
     width: 518px;
@@ -459,26 +496,26 @@
 
 #btn_reg_f {
     position: absolute;
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 70px;
     left: 80px;
-    top: 20px; 
+    top: -10px; 
 }
 
 #btn_rev {
     position: absolute;
-    width: 120px;
-    height: 50px;
-    left: 980px;
-    top: 20px; 
+    width: 170px;
+    height: 70px;
+    left: 950px;
+    top: -10px; 
 }
 
 #btn_rin_f {
     position: absolute;
-    width: 120px;
-    height: 50px;
-    left: 800px;
-    top: 20px; 
+    width: 150px;
+    height: 70px;
+    left: 780px;
+    top: -10px; 
 }
 
 .respuesta {
@@ -525,28 +562,28 @@
 
 #btn_reg_m {
     position: absolute;
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 70px;
     left: 80px;
-    top: 20px; 
+    top: -10px; 
 }
 
 #btn_rin_m {
     position: absolute;
-    width: 120px;
-    height: 50px;
-    left: 800px;
-    top: 20px; 
+    width: 150px;
+    height: 70px;
+    left: 780px;
+    top: -10px; 
 }
 
 #escroto {
-    top: 590px;
-    left: 220px;
+    top: 580px;
+    left: 132px;
 }
 
 #pene {
-    top: 640px;
-    left: 515px;
+    top: 660px;
+    left: 350px;
 }
 
 #testiculo {
@@ -620,6 +657,16 @@
     position: absolute;
     left: 610px;
     top: 500px;
+    width: 5px;
+    border-left: 77px solid #555555;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
+
+#triangulo_mf {
+    position: absolute;
+    left: 492px;
+    top: 630px;
     width: 5px;
     border-left: 77px solid #555555;
     border-top: 25px solid transparent;
