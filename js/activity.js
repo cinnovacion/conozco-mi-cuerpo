@@ -126,7 +126,7 @@ define(function (require) {
             var alto = 250;
             $('.nombre').each(function(){
                 $(this).css({'top':alto+'px', 'left':'30px'});
-                alto += 50;
+                alto += 60;
             });
         });
         //Reiniciar el juego
@@ -137,7 +137,7 @@ define(function (require) {
             var alto = 250;
             $('.nombre').each(function(){
                 $(this).css({'top':alto+'px', 'left':'30px'});
-                alto += 50;
+                alto += 60;
             });
         });
         

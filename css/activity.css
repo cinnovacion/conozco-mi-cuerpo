@@ -452,7 +452,7 @@
 #insturccion {
     position: absolute;
     top: 20px;
-    left: 100px;
+    left: 35px;
     font-size: 40px;
 }
 
@@ -467,7 +467,7 @@
 #etiquetas {
     position: absolute;
     width: 200px;
-    height: 400px;
+    height: 450px;
     top: 258px;
     left: 20px;
     background: #ffccaa;
